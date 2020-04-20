@@ -2,19 +2,19 @@
 A small handy tool to move ALL repositories from Bitbucket to Github
 
 
-#What it does
+# What it does
 
  - Get all repos in BitBucket (and loop thought them)
  - Create a new repo on GitHub with the same slug name (ensures there isn't already one with the same name)
  - Does a bare clone of the BB repo and mirros it to GH
  
  
-#Prerequisites
+# Prerequisites
 
  - Fast internet speed
  - pipenv and python installed environment
  
- #Setup
+ # Setup
 
 ! To run the script you should update the following variables, which can be found on top of the script:
 
