@@ -127,10 +127,6 @@ def process_repo(slug: str, desc: str, private: bool):
         print("Must create: %s" % slug)
         gh_repo_create(slug, desc, private)
 
-    elif not gh_is_repo_empty(gh_repo):
-        print("Existing repo non empty: https://github.com/%s/%s" % (GH_USER, slug), file=sys.stderr)
-        return False
-
     bb_clone_repo(slug)
     gh_repo_push(slug)
     return True
